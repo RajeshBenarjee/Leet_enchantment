@@ -11,4 +11,5 @@ class Solution:
             (s[l],s[r])=(s[r],s[l])
             l+=1
             r-=1
+        # T(N)=O(N//2) S(N)=O(1)
         
