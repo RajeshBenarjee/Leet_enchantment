@@ -1,15 +1,16 @@
 
 class Solution:
     def removeDuplicates(self, s: str) -> str:
-        listy=[s[0]]
+        listy=[]
 
-        for i in range(1,len(s)):
+        for i in s:
             if listy==[]:
-                listy.append(s[i])
-            elif listy[-1]==s[i]:
+                listy.append(i)
+            elif listy[-1]==i:
                 listy.pop()
             else:
-                listy.append(s[i])
+                listy.append(i)
+
         return ''.join(listy)
         
             
