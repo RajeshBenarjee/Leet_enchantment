@@ -1,5 +1,6 @@
 class Solution:
     def candy(self, ratings: List[int]) -> int:
+        # NGE , PGE
         n=len(ratings)
         left=[1]*n
         right=[1]*n
