@@ -1,12 +1,12 @@
 from functools import cache
 class Solution:
     def climbStairs(self, n: int) -> int:
-        @cache
-        def f(n):
-            if n==1:
-                return 1
-            if n==2:
-                return 2
-            else:
-                return f(n-1)+f(n-2)
-        return f(n)
+        if n==1:
+            return 1
+        if n==2:
+            return 2
+        
+        a,b=1,2
+        for i in range(3,n+1):
+            a,b=b,a+b
+        return b
