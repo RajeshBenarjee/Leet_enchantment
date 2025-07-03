@@ -10,12 +10,25 @@ class Solution:
         # 3. else add it to hash 
         # 4. return the len of nums
 
-        l=0
-        hashy=set()
-        while l<len(nums):
-            if nums[l] in hashy:
-                nums.pop(l)
-            else:
-                hashy.add(nums[l])
-                l+=1
-        return len(nums)
+        # l=0
+        # hashy=set()
+        # while l<len(nums):
+        #     if nums[l] in hashy:
+        #         nums.pop(l)
+        #     else:
+        #         hashy.add(nums[l])
+        #         l+=1
+        # return len(nums)
+
+
+        # optimal Approach -> two pointers approach 
+
+        i=0
+        j=0
+        while j<len(nums):
+            if nums[j]!=nums[i]:
+                i+=1
+                nums[i]=nums[j]
+            j+=1
+
+        return i+1
