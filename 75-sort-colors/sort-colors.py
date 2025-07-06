@@ -3,17 +3,18 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        c=0
-        b=len(nums)-1
-        p=0
-        while(p<=b):
-            if nums[p]==0:
-                (nums[p],nums[c])=(nums[c],nums[p])
-                c+=1
-                p+=1
-            elif nums[p]==2:
-                (nums[p],nums[b])=(nums[b],nums[p])
-                b-=1
-            elif nums[p]==1:
-                p+=1
-        
+        n=len(nums)
+        low=0
+        mid=0
+        high=n-1
+        while mid<=high:
+            
+            if nums[mid]==0:
+                (nums[low],nums[mid])=(nums[mid],nums[low])
+                mid+=1
+                low+=1
+            elif nums[mid]==1:
+                mid+=1
+            elif nums[mid]==2:
+                (nums[high],nums[mid])=(nums[mid],nums[high])
+                high-=1
