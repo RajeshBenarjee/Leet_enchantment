@@ -13,4 +13,5 @@ class Solution:
             if curr_sum>sumi:
                 break
         return temp
+        # o(NlogN)
             
