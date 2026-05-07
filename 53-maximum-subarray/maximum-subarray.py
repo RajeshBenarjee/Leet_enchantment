@@ -1,12 +1,13 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
+        n=len(nums)
+        sumi=0
         maxi=float('-inf')
-        s=0
-        for  i in nums:
-            s+=i
-            maxi=max(s,maxi)
-            if s<0:
-                s=0
+        for i in range(n):
+            sumi+=nums[i]
+            if sumi>maxi:
+                maxi=sumi
+            if sumi<0:
+                sumi=0
+            
         return maxi
-
-        # if we want to find the beggining and ending indexes we just keep the temp_start at when we set at zero and increment temp end at every iteration and update at maxi if the curren len > maxi indexes
