@@ -8,8 +8,8 @@
 String, Sorting, Counting Sort
 
 ### 🚀 Performance
-- **Runtime:** 173 ms
-- **Memory:** 19.7 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
