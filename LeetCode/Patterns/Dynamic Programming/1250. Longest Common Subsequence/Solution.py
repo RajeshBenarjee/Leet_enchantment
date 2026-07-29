@@ -1,11 +1,16 @@
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         n1,n2=len(text1),len(text2)
-        def rec(i1,i2):
-            if i1<0 or i2<0:
+        dp=[[-1]*m for _ in range(n)]
+        def solve(i,j):
+            if i>=n1 or j>=n2:
                 return 0
-            if text1[i1]==text2[i2]:
-                return 1+rec(i1-1,i2-1)
+            if dp[i][j]!=-1:
+                return dp[i][j]
+            if text1[i]==text2[j]:
+                res=1+solve(i+1,j+1)
             else:
-                return 0+max(rec(i1-1,i2),rec(i1,i2-1))
-        return rec(n1-1,n2-1)
+                res=max(solve(i+1,j),solve(i,j+1))
+            dp[i][j]=res
+            return dp[i][j]
+        return solve(0,0)
