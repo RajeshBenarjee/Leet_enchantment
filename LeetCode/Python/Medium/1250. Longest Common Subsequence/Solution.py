@@ -1,7 +1,7 @@
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         n1,n2=len(text1),len(text2)
-        dp=[[-1]*(n2+1) for _ in range(n1+1)]
+        dp=[[-1]*m for _ in range(n)]
         def solve(i,j):
             if i>=n1 or j>=n2:
                 return 0
