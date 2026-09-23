@@ -3,7 +3,7 @@
 Track your progress on the Striver's SDE Sheet top interview problems.
 
 ## Progress
-- **Completed:** 1 / 76 (1.3%)
+- **Completed:** 2 / 76 (2.6%)
 
 ---
 
@@ -33,7 +33,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 - [ ] Longest Substring Without Repeating Characters
 
 ### 📂 Linked List
-- [ ] Reverse Linked List
+- [x] [Reverse Linked List](./Python/Easy/206. Reverse Linked List/)
 - [ ] Middle of the Linked List
 - [ ] Merge Two Sorted Lists
 - [ ] Remove Nth Node From End of List
