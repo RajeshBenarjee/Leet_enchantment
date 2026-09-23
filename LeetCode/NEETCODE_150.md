@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 3 / 150 (2.0%)
+- **Completed:** 4 / 150 (2.7%)
 
 ---
 
@@ -14,7 +14,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Valid Anagram
 - [ ] Two Sum
 - [ ] Group Anagrams
-- [ ] Top K Frequent Elements
+- [x] [Top K Frequent Elements](./Python/Medium/347. Top K Frequent Elements/)
 - [ ] Product of Array Except Self
 - [ ] Valid Sudoku
 - [ ] Encode and Decode Strings
